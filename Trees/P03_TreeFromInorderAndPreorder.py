@@ -56,14 +56,16 @@ def inorder(node):
     # now recur on right child
     inorder(node.right)
 
-# Driver program to test above function
-inOrder = ['D', 'B' ,'E', 'A', 'F', 'C']
-preOrder = ['A', 'B', 'D', 'E', 'C', 'F']
 
-# Static variable preIndex
-buildTree.preIndex = 0
-root = buildTree(inOrder, preOrder, 0, len(inOrder)-1)
+if __name__ == '__main__':
+    # Driver program to test above function
+    inOrder = ['D', 'B' ,'E', 'A', 'F', 'C']
+    preOrder = ['A', 'B', 'D', 'E', 'C', 'F']
 
-# Let us test the build tree by priting Inorder traversal
-print ("Inorder traversal of the constructed tree is")
-inorder(root)
+    # Static variable preIndex
+    buildTree.preIndex = 0
+    root = buildTree(inOrder, preOrder, 0, len(inOrder)-1)
+
+    # Let us test the build tree by priting Inorder traversal
+    print ("Inorder traversal of the constructed tree is")
+    inorder(root)

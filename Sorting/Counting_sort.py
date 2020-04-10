@@ -30,3 +30,8 @@ def countSort(arr):
     for i in range(len(arr)): 
         ans[i] = output[i] 
     return ans  
+
+
+if __name__ == '__main__':
+    random_list_of_nums = ['3', '2', '4', '8', '5']
+    countSort(random_list_of_nums)

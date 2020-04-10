@@ -44,15 +44,15 @@ class Tree:
 
 
 
+if __name__ == '__main__':
+	array=[1,22,3,44,32,35]
+	treeRoot=Node(array[0])
+	for i in range(1,len(array)):
+		treeRoot=Tree.insertNode(treeRoot,array[i])
 
-array=[1,22,3,44,32,35]
-treeRoot=Node(array[0])
-for i in range(1,len(array)):
-	treeRoot=Tree.insertNode(treeRoot,array[i])
-
-print("Inorder:", Tree.inorder(treeRoot))
-print("Preorder:", Tree.preorder(treeRoot))
-print("Postorder:", Tree.postorder(treeRoot))
+	print("Inorder:", Tree.inorder(treeRoot))
+	print("Preorder:", Tree.preorder(treeRoot))
+	print("Postorder:", Tree.postorder(treeRoot))
 
 
 

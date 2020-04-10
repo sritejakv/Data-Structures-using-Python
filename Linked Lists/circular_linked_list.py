@@ -44,7 +44,7 @@ class CreateList:
             print(current.data),    
      
      
-class CircularLinkedList:    
+if __name__ == '__main__':
   cl = CreateList();    
   #Adds data to the list    
   cl.add(1);    

@@ -31,11 +31,13 @@ def longest_increaing_subsequence(myList):
 
     return (maximum, reversed(seq))
 
-# define elements in an array
-myList = [10, 22, 9, 33, 21, 50, 41, 60]
-ans = longest_increaing_subsequence(myList)
-print ('Length of lis is', ans[0])
-print ('The longest sequence is', ', '.join(str(x) for x in ans[1]))
+
+if __name__ == '__main__':
+    # define elements in an array
+    myList = [10, 22, 9, 33, 21, 50, 41, 60]
+    ans = longest_increaing_subsequence(myList)
+    print ('Length of lis is', ans[0])
+    print ('The longest sequence is', ', '.join(str(x) for x in ans[1]))
 
 # OUTPUT:
 # Length of lis is 5

@@ -62,12 +62,14 @@ class BinaryHeap(object):
             self.shiftDown(i)
             i = i - 1
 
-bh = BinaryHeap()
-bh.buildHeap([9,5,6,2,3])
 
-print('Deleted:', bh.delete())
-print('Deleted:', bh.delete())
-print('Deleted:', bh.delete())
-bh.insert(3)
-print('Deleted:', bh.delete())
-print(bh)
+if __name__ == '__main__':
+    bh = BinaryHeap()
+    bh.buildHeap([9,5,6,2,3])
+
+    print('Deleted:', bh.delete())
+    print('Deleted:', bh.delete())
+    print('Deleted:', bh.delete())
+    bh.insert(3)
+    print('Deleted:', bh.delete())
+    print(bh)

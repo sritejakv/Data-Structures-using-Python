@@ -40,17 +40,19 @@ class SegmentTree:
             self.update(node * 2, newvalue, position, start, mid)
             self.update(node * 2 + 1, newvalue, position, mid + 1, end)
 
-arr = [10, 5, 9, 3, 4, 8, 6, 7, 2, 1]
-st = SegmentTree(arr)
-st.buildminTree(0, len(arr)-1, 1)
-print("Segment Tree for given array", st.minarr)
 
-#Minimum from index 6 to 9.
-print("Minimum of numbers from index 6 to 9 is: ", st.minRangeQuery(1, 1, len(arr), 6, 9))
-st.update(1, 2, 4, 1, len(arr))
+if __name__ == '__main__':
+    arr = [10, 5, 9, 3, 4, 8, 6, 7, 2, 1]
+    st = SegmentTree(arr)
+    st.buildminTree(0, len(arr)-1, 1)
+    print("Segment Tree for given array", st.minarr)
 
-print(st.minarr)
+    #Minimum from index 6 to 9.
+    print("Minimum of numbers from index 6 to 9 is: ", st.minRangeQuery(1, 1, len(arr), 6, 9))
+    st.update(1, 2, 4, 1, len(arr))
 
-print("Updated minimum of numbers from index 2 to 9 is: ", st.minRangeQuery(1, 1, len(arr), 2, 6))
+    print(st.minarr)
+
+    print("Updated minimum of numbers from index 2 to 9 is: ", st.minRangeQuery(1, 1, len(arr), 2, 6))
 
 #ALl the operations are same for max range Query. Just replace each min() with max and sys.maxsize with -(sys.maxsize).

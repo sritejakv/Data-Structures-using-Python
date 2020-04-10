@@ -29,6 +29,7 @@ def longest_continuous_odd_subsequence(array):
     result = max(final_list, key=len)
     print(result, len(result))
 
+
 if __name__ == '__main__':
     array = [2, 6, 8, 3, 9, 1, 5, 6, 1, 3, 5, 7, 7, 1, 2, 3, 4, 5]
     longest_continuous_odd_subsequence(array)

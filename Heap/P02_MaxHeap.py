@@ -5,7 +5,7 @@ def heapify(A):
     '''Turns a list `A` into a max-ordered binary heap.'''
     n = len(A) - 1
     # start at last parent and go left one node at a time
-    for node in range(n/2, -1, -1):
+    for node in range(int(n/2), -1, -1):
         __shiftdown(A, node)
     return
 
@@ -69,7 +69,7 @@ def __shiftup(A, node):
     '''Traverse up an otherwise max-heap `A` starting at node `node`
     (which is the only node that breaks the heap property) and restore
     the heap structure.'''
-    parent = (node - 1)/2
+    parent = int((node - 1)/2)
     if A[parent] < A[node]:
         __swap(A, node, parent)
     # base case; we've reached the top of the heap
@@ -77,3 +77,13 @@ def __shiftup(A, node):
         return
     else:
         __shiftup(A, parent)
+
+
+if __name__ == '__main__':
+    x = [1, 3, 6, 7]
+    heapify(x)
+    push_heap(x, 2)
+    replace_key(x, 1, 8)
+    pop_heap(x)
+    print(x)
+

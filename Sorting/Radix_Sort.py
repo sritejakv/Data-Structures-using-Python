@@ -38,6 +38,8 @@ def radixsort(l, base=10):
     l = list(output)
   return output
 
-l = [ randint(1, 99999) for x in range(100) ]
-sorted = radixsort(l)
-print(sorted)
+
+if __name__ == '__main__':
+  l = [ randint(1, 99999) for x in range(100) ]
+  sorted = radixsort(l)
+  print(sorted)

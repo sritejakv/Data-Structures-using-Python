@@ -43,7 +43,7 @@ class SegmentTree:
 
 #Code to run the above functions
 if __name__ == '__main__':
-    l = list(map(int, input("Enter the elements of the array separated by space:\n").split()))
+    l = [10, 5, 9, 3, 4, 8, 6, 7, 2, 1]
     st = SegmentTree(l)
     st.buildTree(0, len(l)-1, 1)
 

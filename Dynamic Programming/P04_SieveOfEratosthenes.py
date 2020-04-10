@@ -23,7 +23,8 @@ def sieve_of_eratosthenes(n):
     for p in range(2, n): 
         if prime[p]: 
             print (p), 
-  
+
+
 # driver program 
 if __name__=='__main__': 
     n = 30

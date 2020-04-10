@@ -55,6 +55,7 @@ def postorder(Tree):
         print(Tree.getData(), end = ' ')
     return
 
+
 if __name__ == '__main__':
     root = Node(1)
     root.setLeft(Node(2))

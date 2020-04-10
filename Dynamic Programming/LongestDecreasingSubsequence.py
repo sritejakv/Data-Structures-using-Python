@@ -25,3 +25,8 @@ def lds(arr, n):
   
     # returns the length of the LDS 
     return max
+
+
+if __name__ == '__main__':
+    x = [10, 9, 8, 4, 5]
+    lds(x, 0)

@@ -41,22 +41,23 @@ class Tree:
                 self.print_tree(each_child, point)
 
 
-data = {'data_description': 'Sample_root_1', 'node_id': '1', 'parent_id': ''}
-data1 = {'data_description': 'Sample_root_2', 'node_id': '2', 'parent_id': '1'}
-data2 = {'data_description': 'Sample_root_3', 'node_id': '3', 'parent_id': '1'}
-data3 = {'data_description': 'Sample_root_4', 'node_id': '4', 'parent_id': '2'}
-data4 = {'data_description': 'Sample_root_5', 'node_id': '5', 'parent_id': '3'}
-data5 = {'data_description': 'Sample_root_6', 'node_id': '6', 'parent_id': '4'}
-data6 = {'data_description': 'Sample_root_7', 'node_id': '7', 'parent_id': '4'}
+if __name__ == '__main__':
+    data = {'data_description': 'Sample_root_1', 'node_id': '1', 'parent_id': ''}
+    data1 = {'data_description': 'Sample_root_2', 'node_id': '2', 'parent_id': '1'}
+    data2 = {'data_description': 'Sample_root_3', 'node_id': '3', 'parent_id': '1'}
+    data3 = {'data_description': 'Sample_root_4', 'node_id': '4', 'parent_id': '2'}
+    data4 = {'data_description': 'Sample_root_5', 'node_id': '5', 'parent_id': '3'}
+    data5 = {'data_description': 'Sample_root_6', 'node_id': '6', 'parent_id': '4'}
+    data6 = {'data_description': 'Sample_root_7', 'node_id': '7', 'parent_id': '4'}
 
-a = Tree(Node(data))
-a.insert_child(a.Root, Node(data1))
-a.insert_child(a.Root, Node(data2))
-a.insert_child(a.Root, Node(data3))
-a.insert_child(a.Root, Node(data4))
-a.insert_child(a.Root, Node(data5))
-a.insert_child(a.Root, Node(data6))
-a.print_tree(a.Root, "|_")
+    a = Tree(Node(data))
+    a.insert_child(a.Root, Node(data1))
+    a.insert_child(a.Root, Node(data2))
+    a.insert_child(a.Root, Node(data3))
+    a.insert_child(a.Root, Node(data4))
+    a.insert_child(a.Root, Node(data5))
+    a.insert_child(a.Root, Node(data6))
+    a.print_tree(a.Root, "|_")
 
 # |_ 1  Sample_root_1
 # |__ 2 1 Sample_root_2
